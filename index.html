@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home -Easy Tutorials </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('background.jpeg');
+            background-size: cover;
+            background-attachment: fixed;
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Quiz Quest</a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="quizDropdown" role="button" data-bs-toggle="dropdown">Quiz/Exam</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="quiz.html">Quiz</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                </ul>
+                <div class="text-center mt-3">
+                    <button id="authButton" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#registerModal">Register</button>
+                    <button id="logoutButton" class="btn btn-danger d-none">Logout</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="container text-center mt-5">
+            <h1 >Welcome to Quiz Quest</h1>
+            <p>Challenge yourself with fun and interactive quizzes!</p>
+            <a href="quiz.html" class="btn btn-primary btn-lg">Start Quiz</a>
+        </div>
+    </div>
+    <body>
+        <div class="container mt-4 p-4 bg-light rounded shadow">
+            <h2 class="text-center mb-4">Most Famous Scientists</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="image/ilbert istin.png" class="card-img-top" alt="Image 1">
+                        <div class="card-body text-center">
+                            <h5>Ilbert Istin</h5>
+                            <p class="card-text" id="ilbertText">Ilbert Istin was a significant figure in the history of the Indian
+                                judiciary during the British colonial period. He is best known for his role in the
+                                Ilbert Bill of 1883, which was a proposed legislation aimed at allowing Indian judges to
+                                preside over cases involving British subjects in India. This bill stirred considerable
+                                controversy, leading to protests from the British community in India who opposed the
+                                idea of Indian judges having jurisdiction over them. Although the bill was eventually
+                                modified, it marked an important moment in the Indian struggle for legal equality and
+                                contributed to the broader movement for civil rights during British rule. 
+                                <span id="more1" style="display: none;"> Although the bill was eventually modified, it marked an important moment in the Indian struggle for legal equality and contributed to the broader movement for civil rights during British rule.</span>
+                            </p>
+                            <button id="moreBtn1" class="btn btn-primary" onclick="toggleText('1')">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="image/Ibn Sina.png" class="card-img-top" alt="Image 2">
+                        <div class="card-body text-center">
+                            <h5>Ibn Sina</h5>
+                            <p class="card-text" id="ibnSinaText">Ibn Sina, also known as Avicenna in the West, was a Persian polymath
+                                and one of the most influential thinkers of the Islamic Golden Age. Born in 980 CE in
+                                Bukhara (present-day Uzbekistan), he made significant contributions to various fields,
+                                including philosophy, medicine, astronomy, and mathematics.
+    
+                                His most famous work, The Canon of Medicine, was a key medical text in both the Islamic
+                                world and Europe for centuries. In philosophy, he is known for synthesizing Greek
+                                philosophy, particularly the works of Aristotle and Plato, with Islamic thought,
+                                developing a system of Neoplatonism. Ibn Sina's work laid the foundation for later
+                                philosophers and scientists in both the East and the West, and he is regarded as one of
+                                the greatest medical scholars in history.
+                                <span id="more2" style="display: none;"> Ibn Sina's work laid the foundation for later philosophers and scientists in both the East and the West, and he is regarded as one of the greatest medical scholars in history.</span>
+                            </p>
+                            <button id="moreBtn2" class="btn btn-primary" onclick="toggleText('2')">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="image/Isaac Newton.png" class="card-img-top" alt="Image 3">
+                        <div class="card-body text-center">
+                            <h5>Isaac Newton</h5>
+                            <p class="card-text" id="newtonText">Isaac Newton was an English mathematician, physicist, astronomer, and
+                                author, widely regarded as one of the most influential scientists of all time. Born in
+                                1643, he is best known for developing the theory of gravitation, which revolutionized
+                                our understanding of the universe. His work in Mathematical Principles of Natural
+                                Philosophy (1687) laid the groundwork for classical mechanics, formulating the laws of
+                                motion and universal gravitation.
+    
+                                Newton also made groundbreaking contributions to optics, discovering that white light is
+                                composed of different colors and developing a theory of color based on the observation
+                                of the dispersion of light through a prism. He is also credited with developing
+                                calculus, independently of Leibniz, which has become a fundamental tool in mathematics.
+    
+                                Newton's discoveries not only transformed physics but also shaped the course of
+                                scientific thought, influencing countless scientists and mathematicians for centuries.
+                                <span id="more3" style="display: none;"> Newton's discoveries not only transformed physics but also shaped the course of scientific thought, influencing countless scientists and mathematicians for centuries.</span>
+                            </p>
+                            <button id="moreBtn3" class="btn btn-primary" onclick="toggleText('3')">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            function toggleText(id) {
+                var moreText = document.getElementById("more" + id);
+                var btnText = document.getElementById("moreBtn" + id);
+    
+                if (moreText.style.display === "none") {
+                    moreText.style.display = "inline";
+                    btnText.innerHTML = "Read Less";
+                } else {
+                    moreText.style.display = "none";
+                    btnText.innerHTML = "Read More";
+                }
+            }
+        </script>
+    </body>
+    
+
+
+    <!-- Register/Login Modal -->
+    <div class="modal fade" id="registerModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                        <div id="signupFields" style="display: none;">
+                            <div class="mb-3">
+                                <label>Username</label>
+                                <input type="text" class="form-control" id="signupUsername">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label>Email</label>
+                            <input type="email" class="form-control" id="registerEmail">
+                        </div>
+                        <div class="mb-3">
+                            <label>Password</label>
+                            <input type="password" class="form-control" id="registerPassword">
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submitButton">Login</button>
+                    </form>
+                    <div class="text-center mt-2">
+                        <small>
+                            <span id="toggleText">Don't have an account?</span>
+                            <a href="#" id="toggleLink">Sign Up</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Message -->
+    <div class="container text-center mt-3">
+        <div id="successMessage" class="alert alert-success d-none">Successfully logged in</div>
+    </div>
+
+    <script>
+        window.addEventListener("load", function () {
+            let params = new URLSearchParams(window.location.search);
+            if (params.get("redirect") === "quiz") {
+                let authButton = document.getElementById("authButton");
+                if (authButton) {
+                    authButton.click(); // Opens the login modal
+                }
+            }
+        });
+
+        let hasAccount = localStorage.getItem("hasAccount") === "true";
+        let isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+
+        document.getElementById("toggleLink").addEventListener("click", function (event) {
+            event.preventDefault();
+            let isSignup = document.getElementById("signupFields").style.display === "none";
+            document.getElementById("signupFields").style.display = isSignup ? "block" : "none";
+            document.getElementById("modalTitle").textContent = isSignup ? "Sign Up" : "Login";
+            document.getElementById("submitButton").textContent = isSignup ? "Sign Up" : "Login";
+            document.getElementById("toggleText").textContent = isSignup ? "Already have an account?" : "Don't have an account?";
+            document.getElementById("toggleLink").textContent = isSignup ? "Login" : "Sign Up";
+        });
+
+        document.getElementById("registerForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            let isSignup = document.getElementById("signupFields").style.display !== "none";
+
+            if (isSignup) {
+                hasAccount = true;
+                localStorage.setItem("hasAccount", "true");
+                document.getElementById("signupFields").style.display = "none";
+                document.getElementById("modalTitle").textContent = "Login";
+                document.getElementById("submitButton").textContent = "Login";
+                document.getElementById("toggleText").textContent = "Don't have an account?";
+                document.getElementById("toggleLink").textContent = "Sign Up";
+                alert("Account created successfully! Please login.");
+            } else {
+                if (!hasAccount) {
+                    alert("Please sign up first before logging in.");
+                    document.getElementById("signupFields").style.display = "block";
+                    document.getElementById("modalTitle").textContent = "Sign Up";
+                    document.getElementById("submitButton").textContent = "Sign Up";
+                    document.getElementById("toggleText").textContent = "Already have an account?";
+                    document.getElementById("toggleLink").textContent = "Login";
+                    return;
+                }
+                // Simulate successful login
+                isLoggedIn = true;
+                localStorage.setItem("isLoggedIn", "true");
+                document.getElementById("registerModal").classList.remove("show");
+                document.body.classList.remove("modal-open");
+                document.querySelector(".modal-backdrop").remove();
+                document.getElementById("successMessage").classList.remove("d-none");
+                setTimeout(() => {
+                    document.getElementById("successMessage").classList.add("d-none");
+                    document.getElementById("authButton").classList.add("d-none");
+                    document.getElementById("logoutButton").classList.remove("d-none");
+                }, 3000);
+            }
+        });
+
+        document.getElementById("logoutButton").addEventListener("click", function () {
+            localStorage.removeItem("isLoggedIn");
+            document.getElementById("authButton").classList.remove("d-none");
+            document.getElementById("logoutButton").classList.add("d-none");
+        });
+
+        // Maintain login state on page reload
+        window.addEventListener("load", function () {
+            if (isLoggedIn) {
+                document.getElementById("authButton").classList.add("d-none");
+                document.getElementById("logoutButton").classList.remove("d-none");
+            }
+        });
+    </script>
+
+
+
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h2>Quiz Quest</h2>
+        </div>
+        <div class="footer-links">
+            
+            <a href="about.html">About</a>
+            <a href="feedback.html">feedback</a>
+            <a href="Privacy_Policy.html">Privacy Policy</a>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/mubashar.hanif.948"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/IamMubashir_09"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/itx_mubashir_09"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="footer-credit">
+            <p>&copy; 2025 Quiz Quest. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
